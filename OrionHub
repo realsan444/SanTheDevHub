@@ -1,0 +1,52 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+-- KEY
+local keywindow = OrionLib:MakeWindow({Name = "SanTheDevs Library of scripts |Key", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Key1Tab = keywindow:MakeTab({
+	Name = "Key",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+local Section = Key1Tab:AddSection({
+	Name = "Key | verify please"
+})
+Tab:AddTextbox({
+	Name = "Textbox",
+	Default = "default box input",
+	TextDisappear = true,
+	Callback = function(Value)
+		if value = "KEY_KEY_)645645654hhvugygy8eerg887t4htgn45to348t()" then
+            keywindow:Destroy()
+            local mainwindow = OrionLib:MakeWindow({Name = "SanTheDevs Library of scripts Main!", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+            local MainUTab = mainwindow:MakeTab({
+                Name = "Testing",
+                Icon = "rbxassetid://4483345998",
+                PremiumOnly = false
+            })
+            
+            
+        end
+	end	  
+})
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
